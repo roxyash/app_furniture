@@ -1,0 +1,31 @@
+﻿<Window x:Class="OrderFurniture.WorkFurniture.AddFurniture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderFurniture.WorkFurniture"
+        mc:Ignorable="d"
+        Title="AddEcuipments" Height="249.467" Width="420" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="DarkSlateGray">
+    <Grid>
+
+        <Button Content="Save" Background="Transparent" BorderBrush="Black" HorizontalAlignment="Left" Margin="326,215,0,0" VerticalAlignment="Top" Width="74" Height="18" Click="BtnSave"/>
+        <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="35,217,0,0" VerticalAlignment="Top" Width="53" Height="15" Click="BtnBack">
+            <Image Source="/OrderFurniture;component/Resourse/back.png"></Image>
+        </Button>
+        <TextBox Background="Transparent" BorderBrush="Black" x:Name="ChekMark" HorizontalAlignment="Left" Height="20" Margin="156,19,0,0" TextWrapping="Wrap" Text="{Binding Article}" VerticalAlignment="Top" Width="224"/>
+        <TextBox Background="Transparent" BorderBrush="Black"  HorizontalAlignment="Left" Height="20" Margin="156,43,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="224"/>
+        <!--<DatePicker Background="Transparent" BorderBrush="Black" SelectedDate="{Binding DateOfPurchase}"  HorizontalAlignment="Left" Margin="156,171,0,0" VerticalAlignment="Top" Width="225" Height="23"/>-->
+        <Label x:Name="ArticleLabel" Content="Артикул" HorizontalAlignment="Left" Margin="96,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <Label Content="Наименование" HorizontalAlignment="Left" Margin="58,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <Label Content="Дата покупки" HorizontalAlignment="Left" Margin="66,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <TextBox Background="Transparent" BorderBrush="Black" x:Name="ChekMark_Copy" HorizontalAlignment="Left" Height="20" Margin="156,70,0,0" TextWrapping="Wrap" Text="{Binding Count}" VerticalAlignment="Top" Width="224"/>
+        <TextBox Background="Transparent" BorderBrush="Black"  HorizontalAlignment="Left" Height="20" Margin="156,94,0,0" TextWrapping="Wrap" Text="{Binding Unit}" VerticalAlignment="Top" Width="224"/>
+        <Label Content="Количество" HorizontalAlignment="Left" Margin="77,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <Label Content="Единицы измерения" HorizontalAlignment="Left" Margin="29,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <TextBox Background="Transparent" BorderBrush="Black" x:Name="ChekMark_Copy1" HorizontalAlignment="Left" Height="20" Margin="156,121,0,0" TextWrapping="Wrap" Text="{Binding Price}" VerticalAlignment="Top" Width="224"/>
+        <Label Content="Закупочная цена" HorizontalAlignment="Left" Margin="47,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <Label Content="Основной поставщик" HorizontalAlignment="Left" Margin="22,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.131"/>
+        <ComboBox Background="Transparent" BorderBrush="Black" SelectedValue="{Binding Supplier, Mode=TwoWay}" SelectedValuePath="Name" DisplayMemberPath="Name" x:Name="CBoxTypeNameSupplier" HorizontalAlignment="Left" Margin="157,147,0,0" VerticalAlignment="Top" Width="225" Height="23" />
+
+    </Grid>
+</Window>

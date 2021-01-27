@@ -1,0 +1,36 @@
+﻿<Window x:Class="OrderFurniture.WorkMaterial.WorkWithMaterial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderFurniture.WorkMaterial"
+        mc:Ignorable="d"
+         Title="WorkWithMaterial" Height="462.133" Width="1057.634" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" IsVisibleChanged="Window_IsVisibleChanged">
+    <Grid>
+        <Image Source="/OrderFurniture;component/Resourse/Dir.jpg" Stretch="Fill"></Image>
+        <DataGrid RowBackground="Transparent"  AutoGenerateColumns="False"  IsReadOnly="True" x:Name="DGridMaterial" HorizontalAlignment="Left" Height="370" Margin="22,45,0,0" VerticalAlignment="Top" Width="1011" RenderTransformOrigin="0.024,0.232">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Артикул" Width="*" Binding="{Binding Article}"/>
+                <DataGridTextColumn Header="Наименование" Width="*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Количество" Width="*"  Binding="{Binding Count}"/>
+                <DataGridTextColumn Header="Еденица измерения" Width="*" Binding="{Binding Unit}" />
+                <DataGridTextColumn Header="Закупочная цена" Width="*" Binding="{Binding Price}" />
+                <DataGridTextColumn Header="Основной поставщик" Width="*" Binding="{Binding Supplier.Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Background="Transparent" BorderBrush="Transparent"  HorizontalAlignment="Left" Margin="11,431,0,0" VerticalAlignment="Top" Width="70" Click="BackButton" Height="22">
+            <Image Source="/OrderFurniture;component/Resourse/back.png" ></Image>
+        </Button>
+        <Button x:Name="Add" Background="Transparent" BorderBrush="Black" Content="Add" HorizontalAlignment="Left" Margin="410,432,0,0" VerticalAlignment="Top" Width="200" Click="AddMaterial"/>
+        <Button x:Name="Remove" Background="Transparent" BorderBrush="Black" Content="Remove" HorizontalAlignment="Left" Margin="622,432,0,0" VerticalAlignment="Top" Width="200" Click="BtnRemove"/>
+        <Button x:Name="Change" Background="Transparent" BorderBrush="Black" Content="Change" HorizontalAlignment="Left" Margin="833,432,0,0" VerticalAlignment="Top" Width="200" Click="BtnChange"/>
+        <TextBox Background="Transparent" BorderBrush="Black" x:Name="TBoxSearch" TextChanged="TextBox_TextChanged" HorizontalAlignment="Left" Height="23" Margin="91,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="883"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button  HorizontalAlignment="Left" Margin="1012,12,0,0" VerticalAlignment="Top" Width="22" Height="19" Background="Transparent" BorderBrush="Transparent" Click="ExitProgramm">
+            <Image Source="/OrderFurniture;component/Resourse/krestv2.png" Stretch="Fill"></Image>
+        </Button>
+        <Button  HorizontalAlignment="Left" Margin="982,12,0,0" VerticalAlignment="Top" Width="22" Height="19" Background="Transparent" BorderBrush="Transparent" Click="SverProgramm">
+            <Image Source="/OrderFurniture;component/Resourse/sver.png" Stretch="Fill"></Image>
+        </Button>
+    </Grid>
+</Window>

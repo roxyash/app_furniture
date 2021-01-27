@@ -1,0 +1,36 @@
+﻿<Window x:Class="OrderFurniture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderFurniture"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="248.058" Width="414.91" Background="DarkSlateGray" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Grid>
+        <Button  Background="Transparent" BorderBrush="Black" Content="SignIn" HorizontalAlignment="Left" Margin="341,172,0,0" VerticalAlignment="Top" Width="65" Height="20" Click="SignIN"/>
+
+        <Image  HorizontalAlignment="Left" Height="158" VerticalAlignment="Top" Width="417" Source="Resourse/MainPicture.jpg" Stretch="Fill" Margin="0,0,-0.2,0"/>
+        <Button  Background="Transparent"  BorderBrush="Transparent"  HorizontalAlignment="Left" Margin="398,0,0,0" VerticalAlignment="Top" Width="18" Height="18" Click="ExitProgramm">
+            <Image Source="Resourse/krestv2.png"></Image>
+        </Button>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="41,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="20,193,0,0" VerticalAlignment="Top"/>
+        <TextBox Background="Transparent" BorderBrush="Black" x:Name="LoginText" HorizontalAlignment="Left" Height="17" Margin="90,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224"/>
+
+        <Button  Background="Transparent" BorderBrush="Black" Content="SignUp" HorizontalAlignment="Left" Margin="341,195,0,0" VerticalAlignment="Top" Width="65" Height="19" Click="SignUP"/>
+        <PasswordBox Background="Transparent" BorderBrush="Black" x:Name="PasswordText" Height="17"  HorizontalAlignment="Left" Margin="90,197,0,0" VerticalAlignment="Top" Width="224"/>
+        <Label Content="Captcha" HorizontalAlignment="Left" Margin="26,214,0,0" VerticalAlignment="Top"/>
+        <TextBox Background="Transparent" BorderBrush="Black" x:Name="CaptchaText" HorizontalAlignment="Left" Height="17" Margin="90,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224"/>
+        <Label x:Name="CaptchaLabel" Content="" HorizontalAlignment="Left" Margin="341,217,0,0" VerticalAlignment="Top" Height="27" Width="65"/>
+        <Button  HorizontalAlignment="Left" Margin="320,225,0,0" VerticalAlignment="Top" Width="16" Height="14" BorderBrush="Transparent"  Background="Transparent" Click="UpdateCaptcha">
+            <Image Source="Resourse/update.png" Stretch="Fill"></Image>
+        </Button>
+        <Button  Background="Transparent"  BorderBrush="Transparent"  HorizontalAlignment="Left" Margin="379,0,0,0" VerticalAlignment="Top" Width="18" Height="18" Click="SverProgramm">
+            <Image Source="Resourse/sver.png"/>
+        </Button>
+        <Button  Background="Transparent"  BorderBrush="Transparent"  HorizontalAlignment="Left" Margin="360,0,0,0" VerticalAlignment="Top" Width="18" Height="18" Click="Help">
+            <Image Source="Resourse/Question.png"/>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f1d482ac9f944a6eb927d64316aeede1" Name="Diagram1">
+        <EntityTypeShape EntityType="furnituredbModel.Equipments" Width="1.5" PointX="6" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.Furniture" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.Material" Width="1.5" PointX="3.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.Orders" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.Product" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.SpecificationFurniture" Width="1.5" PointX="6" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.SpecificationMaterial" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.SpecificationOperation" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.SpecificationUnit" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.Supplier" Width="1.5" PointX="1.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.TypeEquipment" Width="1.5" PointX="3.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="furnituredbModel.Users" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="furnituredbModel.FK_Equipments_TypeEquipment" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_Furniture_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationFurniture_Furniture" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_Material_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationMaterial_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_Order_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_Order_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_Product_SpecificationUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationFurniture_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationMaterial_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationOperation_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationUnit_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="furnituredbModel.FK_SpecificationOperation_TypeEquipment" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

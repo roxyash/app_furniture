@@ -1,0 +1,31 @@
+﻿<Window x:Class="OrderFurniture.Registration.SignUP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderFurniture.Registration"
+        mc:Ignorable="d"
+        Title="SignUP" Height="318.637" Width="572.773" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Background="DarkSlateGray">
+    <Grid>
+        <Button Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="14,289,0,0" VerticalAlignment="Top" Width="144" Height="18" Click="BackButton">
+            <Image Source="/OrderFurniture;component/Resourse/back.png"></Image>
+        </Button>
+        <Button Background="Transparent" BorderBrush="Black" FontSize="10" Content="Ok" HorizontalAlignment="Left" Margin="428,291,0,0" VerticalAlignment="Top" Width="133" Height="17" Click="Signup"/>
+        <Label Content="Registration" FontSize="20" HorizontalAlignment="Left" Margin="213,19,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15" Content="Login" HorizontalAlignment="Left" Margin="85,146,0,0" VerticalAlignment="Top" Height="26"/>
+        <Label FontSize="15" Content="Password" HorizontalAlignment="Left" Margin="60,164,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15" Content="FirstName" HorizontalAlignment="Left" Margin="57,92,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15" Content="LastName" HorizontalAlignment="Left" Margin="57,111,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15" Content="MidName" HorizontalAlignment="Left" Margin="58,129,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15" Content="Repeat password" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
+        <TextBox Background="Transparent" BorderBrush="Black" FontSize="8" x:Name="MiddleName" HorizontalAlignment="Left" Height="13" Margin="145,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262"/>
+        <TextBox Background="Transparent" BorderBrush="Black" FontSize="8" x:Name="LastName" HorizontalAlignment="Left" Height="13" Margin="145,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262"/>
+        <TextBox Background="Transparent" BorderBrush="Black" FontSize="8" Text="" x:Name="FirstName" HorizontalAlignment="Left" Height="13" Margin="145,103,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="263"/>
+        <TextBox Background="Transparent" BorderBrush="Black" FontSize="8" x:Name="Login" HorizontalAlignment="Left" Height="13" Margin="144,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262"/>
+        <PasswordBox Background="Transparent" BorderBrush="Black" FontSize="8" x:Name="Password" HorizontalAlignment="Left" Height="13" Margin="144,173,0,0"  VerticalAlignment="Top" Width="262"/>
+        <PasswordBox Background="Transparent" BorderBrush="Black" FontSize="8" x:Name="RepeatPassword" HorizontalAlignment="Left" Height="13" Margin="144,191,0,0" VerticalAlignment="Top" Width="262"/>
+        <Image x:Name="Picture" HorizontalAlignment="Left" Height="99" Margin="442,99,0,0" VerticalAlignment="Top" Width="95" Source="/OrderFurniture;component/Resourse/DefaultPicture.png"/>
+        <Button Background="Transparent" BorderBrush="Black" Content="Upload picture" FontSize="10" HorizontalAlignment="Left" Margin="413,66,0,0" VerticalAlignment="Top" Width="140" Click="UploadPicture" Height="21"/>
+
+    </Grid>
+</Window>
